@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/image/icons/logo.svg" type="image/x-icon">
+    <title>tahapanbelajar</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/responsif.css">
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav id="navbar">
+            <div class="container nav-container">
+                <a href="index.html"><img src="assets/image/icons/logo 2.svg" alt="logo tahapanbelajar"></a>
+                <ul class="nav-menu">
+                    <li><a class="nav-link nav-active" href="index.html">Beranda</a></li>
+                    <li><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li><a class="nav-link" href="#courses">Courses</a></li>
+                    <li><a href="index.html" class="btn1">Langganan Sekarang</a></li>
+                </ul>
+                <button id="open-menu-nav"><i class="fa-solid fa-bars"></i></button>
+                <button id="close-menu-nav"><i class="fa-solid fa-xmark"></i></button>
+            </div>  
+        </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <main>
+    <!-- Hero -->
+        <section id="hero">
+            <div class="container">
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <div class="hero-content content">
+                            <h1>Belajar WebSite dengan Mudah & Seru!</h1>
+                            <p>Memberikan modul pembelajaran mengenai website secara tersusun serta dapat dengan mudah belajar dimana pun dan kapan pun.</p>
+                            <a href="index.html" class="btn2">Coba Gratis</a>    
+                        </div>
+                        <div class="hero-image content">
+                            <img src="assets/image/hero.png" alt="hero">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- End Hero -->
+
+    <!-- Tentang -->
+        <section id="tentang">
+            <div class="container">
+                <div class="flex-column">
+                    <div class="flex-row">
+                        <div class="tentang-image content">
+                            <img src="assets/image/tentang.png" alt="tentang">
+                        </div>
+                        <div class="tentang-content content">
+                            <h1>Layanan yang Kami Berikan</h1>
+                            <p>Menyiptakan pengalaman belajar yang berbeda serta memrberikan berbagai macam modul yang tersedia yang menarik untuk dipelajari.</p>
+                            <div class="layanan">
+                                <div class="dropdown-menu">
+                                    <div class="layanan-content" id="content1">
+                                        <div class="description-layanan">
+                                            <input type="radio" class="radio" name="description" id="description">
+                                            <label for="description">Tahapan belajar memberikan modul yang paling relevan bagi kamu yang baru ingin mempelajari website serta tahapan belajar memberikan modul-modul yang paling terupdate pada saat ini.</label>
+                                        </div>
+                                    </div>
+                                    <div class="list-layanan">
+                                        <div class="lingkaran"><img src="assets/image/icons/check.svg"></div>
+                                        <div class="type-layanan" id="layanan1">Modul yang diberikan  paling terupdate</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layanan">
+                                <div class="dropdown-menu">
+                                    <div class="layanan-content" id="content2">
+                                        <div class="description-layanan">
+                                            <input type="radio" class="radio" name="description" id="description">
+                                            <label for="description">Belajar di tahapan belajar tidak harus melalui komputer atau laptop, kamu juga dapat mengakses layanan tahapan belajar dengan smartphone karena website tahapan belajar sudah responsive diberbagai jenis device.</label>
+                                        </div>
+                                    </div>
+                                    <div class="list-layanan">
+                                        <div class="lingkaran"><img src="assets/image/icons/check.svg"></div>
+                                        <div class="type-layanan" id="layanan2">Akses belajar gampang</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layanan">
+                                <div class="dropdown-menu">
+                                    <div class="layanan-content" id="content3">
+                                        <div class="description-layanan">
+                                            <input type="radio" class="radio" name="description" id="description">
+                                            <label for="description">Tahapan belajar menyediakan berbagai jenis paket course yang bisa kamu pilih sesuai dengan keinginan kamu, serta paket dari tahapan belajar murah dan tentunya worth it untuk dibeli karena memberikan materi yang lengkap dan mudah untuk dipelajari.</label>
+                                        </div>
+                                    </div>
+                                    <div class="list-layanan">
+                                        <div class="lingkaran"><img src="assets/image/icons/check.svg"></div>
+                                        <div class="type-layanan" id="layanan3">Banyak pilihan paket</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- End Tentang -->
+
+    <!-- Courses -->
+    <article>
+        <section id="courses">  
+            <div class="container">
+                <div class="flex-column">
+                    <div class="slideshow">
+                        <div class="card-courses">
+                            <div class="flex-row">
+                                <div class="courses-content content">
+                                    <h1>Full-Stack Web Developer</h1>
+                                    <p>Umumnya, seorang full stack developer diminta untuk menulis kode 
+                                        back-end, mengintegrasikan database, dan menulis HTML/CSS di bagian front-end yang terintegrasi dengan kode back-end tadi. Sebagai teknisi profesional, seorang full stack developer tentunya diharuskan memiliki kemampuan yang beragam dalam bahasa pemrogaman. </p>
+                                    <div class="btn-courses">
+                                        <a href="#" class="btn3">Coba Gratis</a>
+                                        <a href="#" class="btn4">Langganan</a>
+                                    </div>
+                                </div>
+                                <div class="courses-image content">
+                                    <img src="assets/image/courses 1.png" alt="Full-Stack Web Developer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow">
+                        <div class="card-courses">
+                            <div class="flex-row">
+                                <div class="courses-content content">
+                                    <h1>Front-End Web Developer</h1>
+                                    <p>Seorang front end developer harus memastikan tampilan website tersebut telah sesuai atau belum dengan desain awal dan tepat dalam hal fungsionalitasnya. Untuk tampilan yang berada pada website, aplikasi, menu, button, animasi, dan interaksi yang dapat disentuh oleh user merupakan tugas dari seorang front end developer.</p>
+                                    <div class="btn-courses">
+                                        <a href="#" class="btn3">Coba Gratis</a>
+                                        <a href="#" class="btn4">Langganan</a>
+                                    </div>
+                                </div>
+                                <div class="courses-image content">
+                                    <img src="assets/image/courses 2.png" alt="Front-End Web Developer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideshow">
+                        <div class="card-courses">
+                            <div class="flex-row">
+                                <div class="courses-content content">
+                                    <h1>Back-End Web Developer</h1>
+                                    <p>Banyak sekali bahasa pemrograman yang digunakan untuk membantu pekerjaan backend engineer. Di seluruh dunia, untuk saat ini masih banyak yang menggunakan PHP sebagai bahasa backend secara umum.Masih banyak bahasa lain yang sering digunakan seperti NodeJS, Ruby, Python, Go Lang, dan lain sebagainya.</p>
+                                    <div class="btn-courses">
+                                        <a href="#" class="btn3">Coba Gratis</a>
+                                        <a href="#" class="btn4">Langganan</a>
+                                    </div>
+                                </div>
+                                <div class="courses-image content">
+                                    <img src="assets/image/courses 3.png" alt="Back-End Web Developer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <!-- End Courses -->
+
+    <!-- Tim -->
+    <section id="tim">
+        <div class="container">
+            <h1>Tim Kami</h1>
+            <p>Tahpanbelajar memiliki tim yang diisi oleh orang-orang yang hebat yang mampu
+                merancang aplikasi berbasis website yang bermanfaat bagi ia yang ingin
+                belajar mengenai website.
+            </p>
+            <div class="flex-column">
+                <div class="flex-row">
+                    <div class="tims">
+                        <div class="card-tim">
+                            <div class="tim-image">
+                                <img src="assets/image/tim/alvin.png" alt="Alvin Wirapratama">
+                            </div>
+                            <div class="tim-info">
+                                <h4>Alvin Wirapratama</h4>
+                                <p>UI/UX designer</p>
+                                <div class="sosial-media">
+                                    <a href=""><img src="assets/image/icons/facebook.svg" alt="facebook"></a>                    
+                                    <a href=""><img src="assets/image/icons/instagram.svg" alt="instagram"></a>
+                                    <a href=""><img src="assets/image/icons/github.svg" alt="github"></a>                      
+                                    <a href=""><img src="assets/image/icons/linkedin.svg" alt="linkedin"></a>                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-tim">
+                            <div class="tim-image">
+                                <img src="assets/image/tim/bgs darmika.png" alt="Bgs Darmika">
+                            </div>
+                            <div class="tim-info">
+                                <h4>Bgs Darmika</h4>
+                                <p>Front-End Web Developer</p>
+                                <div class="sosial-media">
+                                    <a href=""><img src="assets/image/icons/facebook.svg" alt="facebook"></a>                    
+                                    <a href=""><img src="assets/image/icons/instagram.svg" alt="instagram"></a>
+                                    <a href=""><img src="assets/image/icons/github.svg" alt="github"></a>                      
+                                    <a href=""><img src="assets/image/icons/linkedin.svg" alt="linkedin"></a>                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-tim">
+                            <div class="tim-image">
+                                <img src="assets/image/tim/agus.png" alt="Agus Arya">
+                            </div>
+                            <div class="tim-info">
+                                <h4>Agus Arya</h4>
+                                <p>Back-End Web Developer</p>
+                                <div class="sosial-media">
+                                    <a href=""><img src="assets/image/icons/facebook.svg" alt="facebook"></a>                    
+                                    <a href=""><img src="assets/image/icons/instagram.svg" alt="instagram"></a>
+                                    <a href=""><img src="assets/image/icons/github.svg" alt="github"></a>                      
+                                    <a href=""><img src="assets/image/icons/linkedin.svg" alt="linkedin"></a>                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- End Tim -->
+
+    <!-- Biodata -->
+    <aside id="biodata">
+        <div class="container">
+            <div class="flex-column">
+                <div class="flex-row">
+                    <div class="card-biodata">
+                        <h1>Biodata</h1>
+                        <div class="biodata-content">
+                            <div class="biodata-info content">
+                                <h4>Nama</h4>
+                                <p>I Gusti Bgs Darmika Putra</p>
+                                <br>
+                                <h4>Alamat</h4>
+                                <p>Jln. Wisnu Kec.Marga, Kab.Tabanan, Bali.</p>
+                                <br>
+                                <h4>No Telepon</h4>
+                                <p>+6285792715585</p>
+                                <br>
+                                <h4>Email</h4>
+                                <p>gusputra504@gmail.com</p>
+                            </div>
+                            <div class="biodata-image content">
+                                <img src="assets/image/biodata.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- End Biodata -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Web Sederhana &#169; 2022, Tahapan Belajar</p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- My Script -->
+    <script src="assets/style/script.js"></script>
+</body>
+</html>

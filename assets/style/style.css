@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background-color:#F6F5F3 ;
+    color: #000;
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2.4rem;
+    color: #5A19A6;
+}
+
+a{
+    color: #000;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.content{
+    flex-basis: 50%;
+}
+
+/* Navbar */
+nav{
+    background-color: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav button{
+    display: none;
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.nav-active::after{
+    content: '';
+    display: block;
+    border-bottom: 5px solid #5A19A6;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 5px solid #5A19A6;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+.window-scroll{
+    background-color:#F6F5F3 ;
+    box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.btn1{
+    background-color: #5A19A6;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 8px 18px;
+}
+
+.btn1:hover{
+    background-color: #853dd7;
+}
+/* End Navbar */
+
+/* Hero */
+#hero {
+    padding-top: 200px;
+}
+
+.hero-content{
+    padding: 90px 3px;
+}
+
+.hero-content p{
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-image img{
+    width: 75%;
+    display: block;
+    float: right;
+}
+
+.btn2{
+    background-color: #5A19A6;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 10px 18px;
+    margin-top: 20px;
+}
+
+.btn2:hover{
+    background-color: #853dd7;
+}
+/* End Hero */
+
+/* Tentang */
+#tentang{
+    padding-top: 200px;
+}
+
+.tentang-content p{
+    margin: 0.5rem 0 3rem;
+}
+
+.tentang-image img{
+    width: 75%;
+    display: block;
+    float: left;
+}
+
+.layanan{
+    display: flex;
+    align-items: center;
+}
+
+.list-layanan{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lingkaran{
+    width: 40px;
+    height: 40px;
+    background-color: #5A19A6;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.lingkaran img{
+    width: 50%;
+}
+
+/* dropdown */
+.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu .description-layanan .radio{
+    display: none;
+}
+
+.dropdown-menu label{
+    cursor: pointer;
+}
+
+.dropdown-menu .type-layanan:hover{
+    background: #AB69F9;
+    color: #F6F5F3;
+}
+
+.dropdown-menu .description-layanan,
+.type-layanan{
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+.type-layanan{
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 432px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 8px;
+    padding-right: 40px;
+    order: 0
+}
+
+.type-layanan::after{
+    content: "";
+    background: url(../image/icons/down-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    right: 5px;
+    top: 16px;
+    transition: all 0.4s;
+}
+
+.dropdown-menu .layanan-content{
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-height: 0;
+    margin-left: 60px;
+    width: 432px;
+    opacity: 0;
+    transition: all 0.4s;
+    overflow: hidden;
+    order: 1;
+}
+
+.dropdown-menu .layanan-content.description-active{
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+}
+
+.dropdown-menu .layanan-content.description-active + .type-layanan::after{
+    transform: rotateX(180deg);
+    top: -16px;
+}
+
+.dropdown-menu .layanan-content::-webkit-scrollbar{
+    width: 8px;
+    background-color: #CEB1F0;
+    border-radius: 0 8px 8px 0;
+}
+
+.dropdown-menu .layanan-content::-webkit-scrollbar-thumb{
+    background: #5A19A6;
+    border-radius: 0 8px 8px 0;
+}
+/* End dropdown */
+/* End Tentang */
+
+/* Courses */
+#courses{
+    padding-top: 150px;
+}
+
+.courses-content{
+    margin-bottom: 25px;
+}
+
+.courses-image img {
+    width: 90%;
+    float: right;
+}
+
+.card-courses{
+    align-items: center;
+    gap: 5rem;
+    background-color: #7733C7;
+    border-radius: 30px;
+    color: #fff;
+    padding: 60px 31px 24px 80px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.card-courses:hover{
+    background-color: #853dd7;
+}
+
+.courses-content h1{
+    color: #fff;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #5A19A6;
+}
+
+.slideshow-container{
+    display: none;
+}
+
+.btn3 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #AB69F9;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 18px;
+    margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn3:hover{
+    background-color: #5A19A6;
+    border: 2px solid white !important;
+}
+
+.btn4 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #490496;
+    color: #fff;
+    border: 2px solid white !important;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 18px;
+    margin-top: 80px;
+    margin-left: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn4:hover{
+    background-color: #5A19A6;
+    border: none;
+}
+
+.courses-image img{
+    margin-bottom: 60px;
+    border-radius: 80px 5px 5px 5px;
+}
+/* End Courses */
+
+/* Tim */
+#tim{
+    padding-top: 200px;
+    text-align: center;
+}
+
+.tims{
+    padding-top: 50px;
+    flex-grow: 1;
+    display: flex;
+    gap: 2rem;
+}
+
+.card-tim{
+    background-color: #7733C7;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-tim:hover{
+    background-color: #AB69F9;
+}
+
+.tim-image{
+    align-items: center;
+    display: inline-block;
+}
+
+.tim-image img{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    border: 5px solid #DEC1FF;
+    margin: 64px 125px 24px 125px;
+}
+
+.sosial-media{
+    display: flex;
+    margin :34px 0;
+    justify-content: center;
+}
+
+.sosial-media img{
+    padding: 0 15px ;
+}
+/* End Tim */
+
+/* Biodata */
+#biodata{
+    padding-top: 200px;
+}
+
+#biodata h1{
+    text-align: center;
+    color: #fff;
+    padding-top: 38px;
+}
+
+.biodata-content{
+    display: flex;
+    align-items: center;
+}
+
+.card-biodata{
+    background-color: #7733C7;
+    border-radius: 30px;
+    gap: 5rem;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.card-biodata:hover{
+    background-color: #853dd7;
+}
+
+.biodata-info{
+    margin-left: 90px;
+}
+
+.biodata-image img{
+    width: 75%;
+    margin-right: 30px;
+    display: block;
+    float: right;
+}
+/* End Biodata */
+
+/* Footer */
+footer {
+    padding: 50px;
+    color: #490496;
+    text-align: center;
+    font-weight: bold;
+}
+/* End Footer */
+
+
+
+
+
+
+
+
